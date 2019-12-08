@@ -144,7 +144,9 @@ Citizen.CreateThread(function()
 		if currentAction then
 			ESX.ShowHelpNotification(currentActionMsg)
 
-			if IsControlJustReleased(0, 38) then
+--commented by jay
+--			if IsControlJustReleased(0, 38) then
+			if IsControlJustReleased(0, 46) then
 				if currentAction == 'shop_menu' then
 					OpenShopMenu(currentActionData.zone)
 				end
